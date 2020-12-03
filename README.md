@@ -1,28 +1,19 @@
-# ThingPulse ESP8266 Weather Station
+# ESP8266 Weather Station
 
-
-[![ThingPulse logo](https://thingpulse.com/assets/ThingPulse-w300.svg)](https://thingpulse.com)
-
-
-This code works best with the NodeMCU V2 ESP8266 module and an 0.96" OLED display.
-To get you up and running in no time we created a kit which contains all the necessary parts:
-[https://thingpulse.com/product/esp8266-iot-electronics-starter-kit-weatherstation-planespotter-worldclock/](https://thingpulse.com/product/esp8266-iot-electronics-starter-kit-weatherstation-planespotter-worldclock/)
-
-By buying this and [other kits](https://thingpulse.com/shop/) from us you are funding maintenance and  development of this library. Thank you!
-
-[![ThingPulse ESP8266 WeatherStation Classic Kit](resources/ThingPulse-ESP8266-Weather-Station.jpeg)](https://thingpulse.com/product/esp8266-iot-electronics-starter-kit-weatherstation-planespotter-worldclock/)
-
-### Build Status
-
-| Branch  | Status |
-| ------------- | ------------- |
-| master  | [![Build Status](https://travis-ci.org/ThingPulse/esp8266-weather-station.svg?branch=master)](https://travis-ci.org/ThingPulse/esp8266-weather-station)  |
-| development  | [![Build Status](https://travis-ci.org/ThingPulse/esp8266-weather-station.svg?branch=development)](https://travis-ci.org/ThingPulse/esp8266-weather-station)  |
+03/12/2020 Forking this project to get the weatherstation running on a generic ESP8266 (in my case a WEMOS D1 Mini)
+In combination with an epaper display from Heltec, the cheap 1.54 inch one.
+The goal is to familiarize with the setup and later build some on home-brew on top of this technology
 
 ## Service level promise
 
-<table><tr><td><img src="https://thingpulse.com/assets/ThingPulse-open-source-prime.png" width="150">
-</td><td>This is a ThingPulse <em>prime</em> project. See our <a href="https://thingpulse.com/about/open-source-commitment/">open-source commitment declaration</a> for what this means.</td></tr></table>
+None
+
+## About Heltec E-ink Displays
+It took me a while to figure out the 1.54" Heltec display comes in two versions.
+One with a IL0389 display controller, the other one, has the SSD1681 controller.
+In this project I will be using panels with the SSD1681 controller. 
+
+ALL INFORMATION BELOW IS OBSOLETE AND I WILL CHANGE IT IN THE FUTURE.
 
 ## Install and configure Arduino IDE
 
@@ -86,3 +77,5 @@ The ESP8266 OLED Library changed a lot with the latest release of version 3.0.0.
 | Announcement  | Module  | Removal  |
 |---------------|---------|----------|
 | 2018-06-13    | all **Wunderground** related code, see [our blog](https://thingpulse.com/hello-openweathermap-bye-bye-wunderground/) for details  | January 2020, version 2.0.0  |
+
+
